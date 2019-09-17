@@ -11,7 +11,7 @@ mysql = ReadConfig()
 class MysqlDb:
     def __init__(self):
         self.host = mysql.Database("host1")
-        self.user = mysql.Database("user")
+        self.user = mysql.Database("user1")
         self.passwd = mysql.Database("passwd")
         self.database = mysql.Database("database")
         self.db = MySQLdb.connect(self.host,self.user,self.passwd,self.database,charset="utf8")
