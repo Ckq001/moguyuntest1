@@ -1,12 +1,12 @@
 #  -*- coding:utf-8 -*-
-import MySQLdb
+import pymysql
 from readConfig import ReadConfig
 
 
 mysql = ReadConfig()
 
 
-#db = MySQLdb.connect(host,user,passwd,database,charset="utf8")
+#db = pymysql.connect(host,user,passwd,database,charset="utf8")
 
 class MysqlDb:
     def __init__(self):
@@ -14,7 +14,7 @@ class MysqlDb:
         self.user = mysql.Database("user")
         self.passwd = mysql.Database("passwd")
         self.database = mysql.Database("database")
-        self.db = MySQLdb.connect(self.host,self.user,self.passwd,self.database,charset="utf8")
+        self.db = pymysql.connect(self.host,self.user,self.passwd,self.database,charset="utf8")
 
     def user_id(self):
         cursor = self.db.cursor()
