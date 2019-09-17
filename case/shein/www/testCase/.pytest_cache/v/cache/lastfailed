@@ -1,0 +1,6 @@
+{
+  "testDemo1.py::Login::testLogin": true,
+  "testLogin.py": true,
+  "testRegister.py::TestRegister_0": true,
+  "testRegister.py::TestRegister_1": true
+}
