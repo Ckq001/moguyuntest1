@@ -8,7 +8,7 @@ mysql = ReadConfig()
 
 #db = MySQLdb.connect(host,user,passwd,database,charset="utf8")
 
-class MysqlDb1:
+class MysqlDb:
     def __init__(self):
         self.host = mysql.Database("host")
         self.user = mysql.Database("user")
