@@ -22,6 +22,7 @@ def set_case_list():
         data = str(case)
         if data != "" and not data.startswith("#"):
             caseList.append(data.replace("\n", ""))
+            print(caseList)
     fb.close()
     return caseList
 
@@ -71,6 +72,9 @@ def set_website():
             web = data.split("/")[0]
             site = data.split("/")[1]
             name = web.upper()
+            print(web)
+            print(name)
+            print(site)
             break
     driver.open_browser(name, site)
 
