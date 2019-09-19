@@ -13,6 +13,7 @@ filePath = ''
 def set_case_list():
     """
     read case name from 'caseList.txt'
+    读取 'caseList.txt'文件
     :return:
     """
     caseList = []
@@ -63,6 +64,7 @@ def set_suite():
 def set_website():
     """
     Set website by name
+    调用方法set_case_list()，并判断从配置文件config.ini获取的参数（url地址）
     :return:
     """
     name_list = set_case_list()

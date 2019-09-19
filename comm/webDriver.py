@@ -26,6 +26,7 @@ class Driver:
 
         # 打开地址链接
         url = localReadConfig.get_webServer(name1, name2)
+        print(url)
         self.browser.get(url)
         return self.browser
 

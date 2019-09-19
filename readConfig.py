@@ -30,6 +30,7 @@ class ReadConfig:
         :return:
         """
         value = self.cf.get(name1, name2)
+        print(value)
         return value
 
     def Mysql(self, name):
