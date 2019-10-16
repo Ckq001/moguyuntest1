@@ -2,6 +2,7 @@ from selenium import webdriver
 from comm.Log import MyLog as Log
 import readConfig
 import threading
+import time
 
 localReadConfig = readConfig.ReadConfig()
 
@@ -28,6 +29,7 @@ class Driver:
         url = localReadConfig.get_webServer(name1, name2)
         print(url)
         self.browser.get(url)
+        time.sleep(50)
         return self.browser
 
     def close_browser(self):
