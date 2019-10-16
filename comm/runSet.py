@@ -18,7 +18,7 @@ def set_case_list():
     """
     caseList = []
     caseListPath = os.path.join(readConfig.proDir, "caseList.txt")
-    fb = open(caseListPath)
+    fb = open(caseListPath,'r', encoding='UTF-8')
     for case in fb.readlines():
         data = str(case)
         if data != "" and not data.startswith("#"):
@@ -99,6 +99,7 @@ def get_web():
         data = str(case)
         if data != "" and not data.startswith("#"):
             web = data.split("/")[0]
+            print("web:",web)
             break
     return web
 

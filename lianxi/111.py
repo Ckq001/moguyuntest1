@@ -27,3 +27,9 @@ res = json.loads(json_str)
 print(res['id']) # 90
 print(res['name']) # python
 print(res['url']) # http://www.v2ex.com/go/python
+
+
+
+
+
+	

@@ -1,5 +1,5 @@
 #从配置文件config.ini获取的参数（url地址），不带#号的会被runSet.py读取
-#shein/www/testLogin
+shein/www/testLogin
 #shein/www/testRegister
-romwe/es/testLogin
+#romwe/es/testLogin
 #shein/www/testDemo1

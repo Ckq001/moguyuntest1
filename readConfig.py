@@ -8,7 +8,7 @@ configPath = os.path.join(proDir, 'config.ini')
 
 class ReadConfig:
     def __init__(self):
-        ft = open(configPath)
+        ft = open(configPath,'r', encoding='UTF-8')
         data = ft.read()
 
         # remove BOM

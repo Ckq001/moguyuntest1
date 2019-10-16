@@ -52,13 +52,15 @@ def get_xls(xls_name, sheet_name):
     """
     web = runSet.get_web()
     site = runSet.get_site()
+    print("web is:", web)
+    print("site is:", site)
     cls = []
     # get excel file path
     xls_path = os.path.join(readConfig.proDir, 'file', web, site, xls_name)
     print("xls path:"+xls_path)
 
     # open excel file
-    book = open_workbook(xls_path)
+    book = open_workbook(xls_path,'r', encoding='UTF-8')
     # get sheet by name
     sheet = book.sheet_by_name(sheet_name)
     # get nrows
